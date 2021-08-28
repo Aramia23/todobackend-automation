@@ -47,6 +47,7 @@ Generated\ Files/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+cypress-report.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
