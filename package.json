@@ -1,0 +1,19 @@
+{
+    "name": "todobackend-cypress-automation",
+    "version": "1.0.0",
+    "description": "automation test challenge",
+    "main": "index.js",
+    "scripts": {
+        "test-chrome": "cypress run --browser chrome",
+        "test-firefox": "cypress run --browser firefox"
+    },
+    "author": "Aimara Marcano",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aramia23/todobackend-cypress-automation"
+    },
+    "dependencies": {
+        "cypress": "^8.3.1"
+    }
+}

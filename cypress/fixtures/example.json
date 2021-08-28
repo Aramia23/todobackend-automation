@@ -1,0 +1,6 @@
+{
+    "item": "Using fixtures to represent data",
+    "changeItem": "hello@cypress.io",
+    "itemWithSpecialCaracters": "w!!ww",
+    "itemWithBlankSpace": "w!!w  w"
+}

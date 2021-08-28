@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.6860" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-08-28T20:18:20" tests="0" file="cypress/integration/remove-item/remove-item.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Delete item from list" timestamp="2021-08-28T20:18:20" tests="3" time="1.6860" failures="0">
+    <testcase name="Delete item from list Check correct url" time="0.5150" classname="Check correct url">
+    </testcase>
+    <testcase name="Delete item from list Add and check regular item added" time="0.8280" classname="Add and check regular item added">
+    </testcase>
+    <testcase name="Delete item from list Delete previos item" time="0.3430" classname="Delete previos item">
+    </testcase>
+  </testsuite>
+</testsuites>
