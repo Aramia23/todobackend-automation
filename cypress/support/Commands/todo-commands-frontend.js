@@ -1,9 +1,3 @@
-Cypress.Commands.add("checkUrl", () => {
-    cy.visit('/')
-    cy.url().should('include', 'index.html')
-    cy.get('h1').should('have.text','todos')
-})
-
 Cypress.Commands.add("addItem", (item) =>{
     cy.get('#new-todo')
         .clear()
@@ -14,6 +8,9 @@ Cypress.Commands.add("addItem", (item) =>{
 Cypress.Commands.add("checkItemOnList", (item) =>{
     cy.get('#todoapp')
       .should('contain', item)
+})
+Cypress.Commands.add("checkItemNotOnList", (item) =>{
+    cy.get('#todoapp').contains(item).should('not.exist')
 })
 
 Cypress.Commands.add("editItem", (item,changeItem) =>{
@@ -26,12 +23,13 @@ Cypress.Commands.add("editItem", (item,changeItem) =>{
 
 })
 
-Cypress.Commands.add("deleteItem", (item) =>{
+Cypress.Commands.add("deleteItem", () =>{
     cy.get('#todoapp')
       .find('.destroy')
       .invoke('show')
     cy.get('.view > .destroy').click({ multiple: true })
-
-      
- 
 })
+
+Cypress.Commands.add('deleteSpecificItemByDescription',item => {
+    cy.get(`label:contains("${item}") ~ .destroy`).focus().click({force: true})
+}) 

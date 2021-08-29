@@ -16,7 +16,10 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import '../support/Commands/global-commands'
+import '../support/Commands/todo-commands-backend'
+import '../support/Commands/todo-commands-frontend'
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

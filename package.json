@@ -4,8 +4,8 @@
     "description": "automation test challenge",
     "main": "index.js",
     "scripts": {
-        "test-chrome": "cypress run --browser chrome",
-        "test-firefox": "cypress run --browser firefox"
+        "test-chrome": "npx cypress run --browser chrome  --headless",
+        "test-firefox": "npx cypress run --browser firefox --headless"
     },
     "author": "Aimara Marcano",
     "license": "ISC",
