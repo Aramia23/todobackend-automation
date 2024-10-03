@@ -7,9 +7,12 @@ import {deleteSpecificItemByDescription} from '../../../support/Commands/todo-co
 //To create appropiate enviroment to test, delete and add elementes backend endpoints are used todo clean and generate appropiate data
 describe('Delete item from list', ()=>{
     beforeEach('Open and check url', () =>{
-        cy.deleteTodoItems();
-        cy.createTodosItemsByApi(testData.item,testData.item);
+        //cy.deleteTodoItems();
         cy.checkUrl();
+        cy.addItem(testData.item)
+        cy.checkItemOnList(testData.item)            
+        //cy.createTodosItemsByApi(testData.item,testData.item);
+        
     })
     it('Delete specifict item',()=>{
         cy.deleteSpecificItemByDescription(testData.item)  

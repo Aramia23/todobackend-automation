@@ -6,7 +6,7 @@ import testData from '../../../fixtures/todoData.json'
 //To create appropiate enviroment to test, delete backend endpoints is used todo clean data.
 describe('Add diferents items to list', ()=>{
     beforeEach('Open and check url', () =>{
-        cy.deleteTodoItems()
+        //cy.deleteTodoItems()
         cy.checkUrl()
     })
     it('Add and check regular items',()=>{
